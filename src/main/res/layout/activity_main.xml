@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Dice Roller"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/diceImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/dicegeneral" />
+
+    <TextView
+        android:id="@+id/diceResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/diceImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Please tap the button..."
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/rollButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/diceResult"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="ROLL!" />
+
+</RelativeLayout>
